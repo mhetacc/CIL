@@ -1,0 +1,149 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{9}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Amsalem and Zoizner(2023)]%
+        {amsalem_people_2023}
+\bibfield{author}{\bibinfo{person}{Eran Amsalem} {and} \bibinfo{person}{Alon Zoizner}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Do people learn about politics on social media? {A} meta-analysis of 76 studies}.
+\newblock \bibinfo{journal}{\emph{Journal of Communication}} \bibinfo{volume}{73}, \bibinfo{number}{1} (\bibinfo{date}{Feb.} \bibinfo{year}{2023}), \bibinfo{pages}{3--13}.
+\newblock
+\showISSN{0021-9916}
+\urldef\tempurl%
+\url{https://doi.org/10.1093/joc/jqac034}
+\showDOI{\tempurl}
+
+
+\bibitem[Belcastro et~al\mbox{.}(2022)]%
+        {belcastro_analyzing_2022}
+\bibfield{author}{\bibinfo{person}{Loris Belcastro}, \bibinfo{person}{Francesco Branda}, \bibinfo{person}{Riccardo Cantini}, \bibinfo{person}{Fabrizio Marozzo}, \bibinfo{person}{Domenico Talia}, {and} \bibinfo{person}{Paolo Trunfio}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Analyzing voter behavior on social media during the 2020 {US} presidential election campaign}.
+\newblock \bibinfo{journal}{\emph{Social Network Analysis and Mining}} \bibinfo{volume}{12}, \bibinfo{number}{1} (\bibinfo{date}{July} \bibinfo{year}{2022}), \bibinfo{pages}{83}.
+\newblock
+\showISSN{1869-5469}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s13278-022-00913-9}
+\showDOI{\tempurl}
+
+
+\bibitem[Chung and Kim(2025)]%
+        {chung_exploiting_2025}
+\bibfield{author}{\bibinfo{person}{Woojin Chung} {and} \bibinfo{person}{Jeonghoon Kim}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Exploiting {Vocabulary} {Frequency} {Imbalance} in {Language} {Model} {Pre}-training}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.2508.15390}
+\showDOI{\tempurl}
+\newblock
+\shownote{arXiv:2508.15390 [cs]}.
+
+
+\bibitem[Eurobarometer(2023)]%
+        {eurobarometer_media_2023}
+\bibfield{author}{\bibinfo{person}{Eurobarometer}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Media \& {News} {Survey} 2023 - {November} 2023 - - {Eurobarometer} survey}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{European Union}.
+\newblock
+\showISBNx{978-92-848-1323-0}
+\urldef\tempurl%
+\url{https://doi.org/10.2861/11595}
+\showDOI{\tempurl}
+
+
+\bibitem[Lorenz-Spreen et~al\mbox{.}(2023)]%
+        {lorenz-spreen_systematic_2023}
+\bibfield{author}{\bibinfo{person}{Philipp Lorenz-Spreen}, \bibinfo{person}{Lisa Oswald}, \bibinfo{person}{Stephan Lewandowsky}, {and} \bibinfo{person}{Ralph Hertwig}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{A systematic review of worldwide causal and correlational evidence on digital media and democracy}.
+\newblock \bibinfo{journal}{\emph{Nature Human Behaviour}} \bibinfo{volume}{7}, \bibinfo{number}{1} (\bibinfo{date}{Jan.} \bibinfo{year}{2023}), \bibinfo{pages}{74--101}.
+\newblock
+\showISSN{2397-3374}
+\urldef\tempurl%
+\url{https://doi.org/10.1038/s41562-022-01460-1}
+\showDOI{\tempurl}
+
+
+\bibitem[Maher(2024)]%
+        {maher_twice_2024}
+\bibfield{author}{\bibinfo{person}{Bron Maher}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Twice as many {Brits} got 2024 election news from {TV} as from social media, {Ofcom} finds}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://pressgazette.co.uk/news/ofcom-2024-election-news-sources-television-social-media-working-class/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Rita et~al\mbox{.}(2023)]%
+        {rita_social_2023}
+\bibfield{author}{\bibinfo{person}{Paulo Rita}, \bibinfo{person}{Nuno António}, {and} \bibinfo{person}{Ana~Patrícia Afonso}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Social media discourse and voting decisions influence: sentiment analysis in tweets during an electoral period}.
+\newblock \bibinfo{journal}{\emph{Social Network Analysis and Mining}} \bibinfo{volume}{13}, \bibinfo{number}{1} (\bibinfo{date}{March} \bibinfo{year}{2023}), \bibinfo{pages}{46}.
+\newblock
+\showISSN{1869-5469}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s13278-023-01048-1}
+\showDOI{\tempurl}
+
+
+\bibitem[Silva and Proksch(2022)]%
+        {silva_politicians_2022}
+\bibfield{author}{\bibinfo{person}{Bruno~Castanho Silva} {and} \bibinfo{person}{Sven-Oliver Proksch}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Politicians unleashed? {Political} communication on {Twitter} and in parliament in {Western} {Europe}}.
+\newblock \bibinfo{journal}{\emph{Political Science Research and Methods}} \bibinfo{volume}{10}, \bibinfo{number}{4} (\bibinfo{date}{Oct.} \bibinfo{year}{2022}), \bibinfo{pages}{776--792}.
+\newblock
+\showISSN{2049-8470, 2049-8489}
+\urldef\tempurl%
+\url{https://doi.org/10.1017/psrm.2021.36}
+\showDOI{\tempurl}
+
+
+\bibitem[Tonelli et~al\mbox{.}(2019)]%
+        {tonelli_prendo_2019}
+\bibfield{author}{\bibinfo{person}{Sara Tonelli}, \bibinfo{person}{Rachele Sprugnoli}, {and} \bibinfo{person}{Giovanni Moretti}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Prendo la {Parola} in {Questo} {Consesso} {Mondiale}:}.
+\newblock  (\bibinfo{year}{2019}).
+\newblock
+\urldef\tempurl%
+\url{https://ceur-ws.org/Vol-2481/paper71.pdf}
+\showURL{%
+\tempurl}
+
+
+\end{thebibliography}

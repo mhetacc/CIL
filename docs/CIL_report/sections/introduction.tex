@@ -1,0 +1,47 @@
+\section{Introduction}
+
+Computed Tomography (CT) is a non-invasive imaging technique that reconstructs the
+internal structure of an object from measurements taken externally. The term
+\textit{tomography} itself derives from the Greek \textit{tomos} (slice or section)
+and \textit{graphein} (to write or record), reflecting its core purpose of producing
+cross-sectional images of a target without physical intervention~\cite{sebastiani2024ct}.
+
+The physical principle underlying CT relies on the transmission of waves or particles,
+most commonly X-rays, through the object of interest. As X-rays traverse matter, their
+intensity is attenuated according to the material's local properties. In the simplest
+homogeneous case, this relationship is captured by the exponential decay
+$I_1 = I_0 e^{-\mu s}$, where $I_0$ and $I_1$ denote the incident and transmitted
+intensities, $\mu > 0$ is the attenuation coefficient, and $s$ is the path length
+through the material. For non-homogeneous objects, this generalises to the
+\textit{Beer--Lambert law}:
+\begin{equation}
+    I_1 = I_0 \, e^{-\int_{\ell} \mu(x)\, dx},
+\end{equation}
+which, upon a logarithmic transformation, yields the line integral relation
+$-\log(I_1/I_0) = \int_{\ell} \mu(x)\, dx$.
+This linearised measurement, referred to as the \textit{absorption} or
+\textit{projection}, forms the basis of the tomographic inverse problem. A collection
+of such projections acquired over multiple angles constitutes a \textit{sinogram}.
+
+Mathematically, CT reconstruction can be cast as an inverse problem. Given a target
+$u \in X = L^2(\Omega)$ with $u \colon \mathbb{R}^d \to \mathbb{R}_+$ defined on a
+bounded domain $\Omega \subset \mathbb{R}^d$ ($d = 2, 3$), the \textit{forward
+problem} models the acquisition process via the Radon transform
+$\mathcal{R}(u) = y$, which integrates $u$ over lines $\ell(\omega, s)$ parameterised
+by angle $\omega \in S^1$ and offset $s \in \mathbb{R}$. The reconstruction task,
+i.e., recovering $u$ from measured data $y$, constitutes the corresponding
+\textit{inverse problem}.
+
+The classical analytic solution to this inverse problem is \textit{Filtered
+Backprojection} (FBP), an exact inversion formula valid in the continuous setting.
+FBP performs well when complete projection data are available and the target can be
+assumed static. However, it suffers from theoretical limitations under discretisation
+and provides no stability guarantees in realistic acquisition conditions.
+
+In many practical scenarios, reducing the X-ray radiation dose or shortening scan
+time leads to \textit{limited data tomography}, which encompasses two main regimes:
+\textit{limited-angle CT}, where projections are acquired only within a restricted
+angular range, and \textit{sparse-angle CT}, where a reduced number of projection
+angles are sampled over the full range. Both settings cause FBP to produce
+severely degraded reconstructions, motivating the development of more advanced
+reconstruction methods capable of handling incomplete and noisy measurement data.

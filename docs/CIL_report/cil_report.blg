@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: cil_report.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: report.bib
+Warning--I didn't find a database entry for "sebastiani2024ct"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no journal in tonelli_prendo_2019
+Warning--no number and no volume in tonelli_prendo_2019
+Warning--page numbers missing in both pages and numpages fields in tonelli_prendo_2019
+You've used 9 entries,
+            5981 wiz_defined-function locations,
+            1546 strings with 20415 characters,
+and the built_in function-call counts, 9303 in all, are:
+= -- 1327
+> -- 283
+< -- 0
++ -- 95
+- -- 104
+* -- 655
+:= -- 905
+add.period$ -- 47
+call.type$ -- 9
+change.case$ -- 61
+chr.to.int$ -- 9
+cite$ -- 12
+duplicate$ -- 756
+empty$ -- 539
+format.name$ -- 132
+if$ -- 2268
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 24
+newline$ -- 149
+num.names$ -- 63
+pop$ -- 255
+preamble$ -- 1
+purify$ -- 132
+quote$ -- 0
+skip$ -- 270
+stack$ -- 0
+substring$ -- 650
+swap$ -- 63
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 186
+warning$ -- 3
+while$ -- 58
+width$ -- 0
+write$ -- 244
+(There were 4 warnings)
