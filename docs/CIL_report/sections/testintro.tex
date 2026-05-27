@@ -1,0 +1,62 @@
+\section{Introduction and Mathematical Foundations}
+In traditional photography, image acquisition is a direct process: a physical lens focuses light reflected from an object onto a photosensitive sensor, comprised by billions of photosites each of which records the raw intensity values of light in three channels: Red, Green, and Blue. The post-processing needed to then obtain a polished-looking picture are quite straightforward, since the object of interest is the \textit{external} appearance of the subject.
+
+On the other hand, many modern scientific and medical apparatuses require looking inside an object to capture phenomena where direct visual access is not possibile, for example when taking an X-Ray of a patient. In this paradigm, the raw hardware measurements are often highly degraded, indirect, or completely unrecognizable, and the final image must be computationally reconstructed. This constraint gave rise to the interdisciplinary field of \textit{Computational Imaging} (CI), which leverages machine learning and other paradigms to overcome hardware limitations and reconstruct high-quality images from raw, unstructured sensor data. This represents a paradigm shift in visual and diagnostic modalities, transitioning to an integrated approach that couples physical measurement devices with rigorous data-driven and variational algorithms.
+
+An example of an application of computational imaging is MRI subsampling: the idea is to purposely acquire only a fraction of the raw data to speed-up the process of a factor of 2X to 10X, to minimize claustrophobia in patients. The image is then reconstructed from the incomplete data.
+
+\subsection{The Continuous Forward Physics Model}
+The fundamental starting point for any analytical treatment of an imaging system is the establishment of a forward model. Let $u \in \mathcal{U}(\mathbb{R}^d)$ represent the continuous, unknown physical object of interest embedded in a $d$-dimensional space. The process of signal transmission and subsequent digital recording can be encapsulated by the generic continuous-to-discrete forward operator mapping defined as:
+\begin{equation}
+    y = \mathcal{P}(\mathcal{S}\mathcal{H}u)
+\end{equation}
+where $y \in \mathbb{R}^M$ denotes the vector of $M$ discrete, experimental observations. The linear operators perform distinct tasks mandated by the physical architecture of the scanning device:
+\begin{itemize}
+    \item $\mathcal{H}: \mathcal{U}(\mathbb{R}^d) \to \mathcal{Y}(\mathbb{R}^{d_0})$ maps the continuous object space to a continuous signal space via a linear integral operator governed by a physical kernel $h(z,x)$:
+    \begin{equation}
+        (\mathcal{H}u)(z) = \int_{\mathbb{R}^d} h(z, x) u(x) \, dx
+    \end{equation}
+    Depending on the modality, this kernel models phenomena such as pointwise multiplication, shift-invariant blurs ($h(z,x) = k(x-z)$), or line-integral projections.
+    \item $\mathcal{S}: \mathcal{Y}(\mathbb{R}^{d_0}) \to \mathbb{R}^M$ is a localized sampling operator that models detector boundaries and pixel/voxel integration arrays using sampling weights $\psi_m(z)$:
+    \begin{equation}
+        [\mathcal{S}v]_m = \int_{\mathbb{R}^{d_0}} \psi_m(z) v(z) \, dz, \quad \forall m \in \{1, \dots, M\}
+    \end{equation}
+    \item $\mathcal{P}: \mathbb{R}^M \to \mathbb{R}^M$ characteristically models stochastic structural degradations, such as electronic read noise or quantum photon counting restrictions.
+\end{itemize}
+
+\subsection{Finite-Dimensional Discretization and Matrix Structures}
+Because digital computing systems cannot directly process infinite-dimensional continuous spaces, we must approximate the continuous operator by projecting $u$ onto an $N$-dimensional approximation space $\mathcal{U}_N(\mathbb{R}^d) = \text{span}(\{\phi_n\}_{n=1}^N)$ comprised of linearly independent generating functions or basis elements (e.g., splines, wavelets, or indicator functions on a localized pixel grid)~. Writing $u \approx \sum_{n=1}^N u_n \phi_n$ allows the linear system to be expressed through a matrix-vector product:
+\begin{equation}
+    \mathcal{S}\mathcal{H}u \approx A_0 u
+\end{equation}
+where $A_0 \in \mathbb{R}^{M \times N}$ represents the discrete forward operator matrix given by the exact integral evaluation $[A_0]_{m,n} = [\mathcal{S}\mathcal{H}\phi_n]_m$. 
+
+For realistic scales (e.g., $M = N = 10^7$), constructing and storing $A_0$ explicitly poses catastrophic memory requirements ($\approx 800$ Terabytes) and computationally prohibitive matrix multiplications ($O(MN)$). Computational imaging therefore leverages highly structured linear approximations, relying on numerical integration quadrature rules ($\hat{A}$) and structural sparsification thresholds ($A = \mathcal{T}(\hat{A})$). Depending on the specific physical geometry, the system can be approximated via $K$-sparse matrices under Compressed Sparse Row (CSR) storage schemes, multi-diagonal band structures for decaying spatial kernels, circulant structures diagonalizable via Fast Fourier Transforms ($A = \mathcal{F}^{-1} \text{diag}(\mathcal{F}c)\mathcal{F}$), or low-rank singular value compositions.
+
+\subsection{Ill-Posedness and Inversion Failure}
+A fundamental challenge in solving the inverse problem—recovering the vector $u \in \mathbb{R}^N$ from the corrupted observations $y \in \mathbb{R}^M$—is the inherent ill-posedness of the system in the sense of Hadamard. A problem is considered well-conditioned if a solution exists within the image space, is strictly unique, and exhibits topological stability such that localized modifications in the data vector do not produce unbounded variations in the reconstruction. 
+
+In practical implementations, the measurement vector is perturbed by additive white noise, $y = Au + n$, where $n \sim \mathcal{N}(0, \sigma^2 I_M)$. Standard direct algebraic inversions fail completely in this setting. If one attempts a naive direct matrix inversion or a standard least-squares minimization:
+\begin{equation}
+    u_{LS} \in \arg\min_{u \in \mathbb{R}^N} \frac{1}{2} \|Au - y\|_2^2
+\end{equation}
+the presence of zero or near-zero singular values within the spectrum of $A$ catastrophically amplifies the noise component. Evaluating the stable minimum-norm solution via the Moore-Penrose pseudo-inverse $A^{\dagger} = V \Sigma^{-1} U^T$ reveals the nature of this structural instability:
+\begin{equation}
+    u^* = A^{\dagger}y = \bar{u} + V \Sigma^{-1} U^T n
+    \label{eq:pseudoinverse}
+\end{equation}
+The relative error is bounded by the condition number $\kappa(A) = \sigma_1(A) / \sigma_R(A)$. As the singular values $\sigma_R(A)$ decay precipitously toward zero, $\kappa(A) \to \infty$, causing the noise term in Equation \eqref{eq:pseudoinverse} to dominate the signal entirely and rendering the reconstructed image useless.
+
+\subsection{Variational Regularization Frameworks}
+To stabilize this inversion, it is mandatory to incorporate a priori architectural assumptions regarding the expected structural properties of the target image. This is formalized mathematically through a variational minimization problem balancing a data fidelity term and a regularizing constraint:
+\begin{equation}
+    u^* \in \arg\min_{u \in \mathbb{R}^N} \mathcal{D}(Au, y) + \lambda \mathcal{R}(u)
+\end{equation}
+Here, $\mathcal{D}(\cdot,\cdot)$ ensures physical compliance with the measured values, derived from statistical likelihood specifications via a Bayesian paradigm (e.g., quadratic $\frac{1}{2}\|Au-y\|_2^2$ fields under Gaussian perturbations, or Kullback-Leibler divergences under Poisson particle dynamics). The parameter $\lambda > 0$ dictates the optimization trade-off between experimental measurements and spatial expectations. 
+
+The chosen image model $\mathcal{R}(u)$ completely shapes the geometry of the solution space. Basic energy minimization ($\mathcal{R}(u) = \|u\|_2^2$) stabilizes numerical conditioning but lacks local feature preservation. Standard Tikhonov-Sobolev smoothness regularizers ($\mathcal{R}(u) = \|\nabla u\|_2^2$) enforce global derivative penalties that penalize oscillations, yet systematically blur highly localized structural bounds and crisp target edges. To overcome this oversmoothing, edge-preserving alternatives such as Total Variation ($\text{TV}(u) = \sum_n \|\nabla u[n]\|_2$) are implemented to foster sparse gradient fields, creating piecewise-constant block representations. Alternatively, sparse representation approaches project the candidate image onto directional frame dictionaries ($\Psi$) under localized $\ell_1$-norm penalties ($\| \alpha \|_1$), utilizing convex optimization proxies to resolve complex underlying physical parameters.
+
+\subsection{Transition to Section 2: Computed Tomography}
+While standard architectural variations—such as shift-invariant blurs or uniform spatial degradations—provide excellent intuitive templates for variational design, they do not fully reveal the mathematical complexity encountered when the operator $A$ maps completely separate physical spaces. To fully analyze the performance of these analytical tools, we must examine a medical modality where the measurement space is inherently non-local and fundamentally decoupled from the classical spatial coordinate framework: \textbf{Computed Tomography (CT)}. 
+
+As outlined in the next section, the physics of X-ray attenuation transitions the forward operator from a local localized transformation into a series of boundary line integrals formalized by the continuous X-ray and Radon transforms. Resolving this specific modality demands an explicit study of projection geometries, sinogram spaces, and customized optimization architectures designed to invert non-local physical operators without introducing severe noise amplification or structural artifacts.

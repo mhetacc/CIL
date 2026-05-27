@@ -1,47 +1,14 @@
 \section{Introduction}
+In traditional photography, image acquisition is a direct process: a physical lens focuses light reflected from an object onto a photosensitive sensor, comprised by billions of photosites each of which records the raw intensity values of light in three channels: Red, Green, and Blue. The post-processing needed to then obtain a polished-looking picture are quite straightforward, since the object of interest is the \textit{external} appearance of the subject.
 
-Computed Tomography (CT) is a non-invasive imaging technique that reconstructs the
-internal structure of an object from measurements taken externally. The term
-\textit{tomography} itself derives from the Greek \textit{tomos} (slice or section)
-and \textit{graphein} (to write or record), reflecting its core purpose of producing
-cross-sectional images of a target without physical intervention~\cite{sebastiani2024ct}.
+However, many modern scientific and medical apparatuses require looking inside an object to capture phenomena where direct visual access is not possibile, for example when taking an X-Ray of a patient. In this paradigm, the raw hardware measurements are often highly degraded, indirect, or completely unrecognizable, and the final image must be computationally reconstructed. This constraint gave rise to the interdisciplinary field of \textit{Computational Imaging} (CI), which leverages machine-learning and other algorithmic paradigms to overcome hardware limitations and reconstruct high-quality visuals from raw, unstructured sensor data.
 
-The physical principle underlying CT relies on the transmission of waves or particles,
-most commonly X-rays, through the object of interest. As X-rays traverse matter, their
-intensity is attenuated according to the material's local properties. In the simplest
-homogeneous case, this relationship is captured by the exponential decay
-$I_1 = I_0 e^{-\mu s}$, where $I_0$ and $I_1$ denote the incident and transmitted
-intensities, $\mu > 0$ is the attenuation coefficient, and $s$ is the path length
-through the material. For non-homogeneous objects, this generalises to the
-\textit{Beer--Lambert law}:
+Mathematically, the core of Computational Imaging lies in the distinction between the \textit{forward problem} and the \textit{inverse problem}. The forward problem models the underlying physics of the imaging system. Assuming the true, continuous underlying object is represented by $u$, and the discrete, noisy measurements recorded by the hardware are $y$, the acquisition process can be formulated as:
 \begin{equation}
-    I_1 = I_0 \, e^{-\int_{\ell} \mu(x)\, dx},
+    y = Au + \eta
 \end{equation}
-which, upon a logarithmic transformation, yields the line integral relation
-$-\log(I_1/I_0) = \int_{\ell} \mu(x)\, dx$.
-This linearised measurement, referred to as the \textit{absorption} or
-\textit{projection}, forms the basis of the tomographic inverse problem. A collection
-of such projections acquired over multiple angles constitutes a \textit{sinogram}.
+where $A$ represents the forward operator (e.g., a blurring kernel, a Fourier transform, or a Radon transform) dictated by the system's physics, and $\eta$ denotes additive measurement noise. The objective of Computational Imaging is to solve the corresponding \textit{inverse problem}: given the corrupted measurements $y$ and the known or estimated forward operator $A$, find an approximation $u^*$ that accurately recovers the true state of the object.
 
-Mathematically, CT reconstruction can be cast as an inverse problem. Given a target
-$u \in X = L^2(\Omega)$ with $u \colon \mathbb{R}^d \to \mathbb{R}_+$ defined on a
-bounded domain $\Omega \subset \mathbb{R}^d$ ($d = 2, 3$), the \textit{forward
-problem} models the acquisition process via the Radon transform
-$\mathcal{R}(u) = y$, which integrates $u$ over lines $\ell(\omega, s)$ parameterised
-by angle $\omega \in S^1$ and offset $s \in \mathbb{R}$. The reconstruction task,
-i.e., recovering $u$ from measured data $y$, constitutes the corresponding
-\textit{inverse problem}.
+A classic and highly illustrative archetype of such an inverse problem is Computed Tomography (CT). A CT scanner does not capture a direct image of internal anatomy; instead, it measures the attenuation of X-ray beams passing through the body at various angles, yielding raw data known as a sinogram. Reconstructing a cross-sectional image from this sinogram is inherently a computational task. While classical methods like Filtered Backprojection (FBP) succeed when a dense, continuous set of projection angles is available, real-world constraints—such as the urgent clinical need to minimize X-ray radiation doses or accelerate scanning times—frequently limit data acquisition. This results in \textit{Limited Data Tomography}, where the inverse problem becomes highly ill-posed, meaning the physical measurements alone are mathematically insufficient to yield a unique, stable reconstruction without introducing severe structural artifacts.
 
-The classical analytic solution to this inverse problem is \textit{Filtered
-Backprojection} (FBP), an exact inversion formula valid in the continuous setting.
-FBP performs well when complete projection data are available and the target can be
-assumed static. However, it suffers from theoretical limitations under discretisation
-and provides no stability guarantees in realistic acquisition conditions.
-
-In many practical scenarios, reducing the X-ray radiation dose or shortening scan
-time leads to \textit{limited data tomography}, which encompasses two main regimes:
-\textit{limited-angle CT}, where projections are acquired only within a restricted
-angular range, and \textit{sparse-angle CT}, where a reduced number of projection
-angles are sampled over the full range. Both settings cause FBP to produce
-severely degraded reconstructions, motivating the development of more advanced
-reconstruction methods capable of handling incomplete and noisy measurement data.
+This essay explores the paradigm shifts within Computational Imaging through the practical application of limited-data CT image reconstruction, reflecting the algorithmic journey from classical mathematical optimization to modern, data-driven methodologies. First, we examine \textit{model-based} variational approaches, focusing on the incorporation of hand-crafted image priors—such as Total Variation (TV) regularization—to mathematically compensate for missing angular data. Second, we transition to contemporary \textit{data-driven} frameworks, investigating how deep learning can be integrated with the known physics of the forward operator via physics-informed neural networks or unrolled optimization architectures. By analyzing the empirical results of these two approaches on CT reconstruction tasks, this work highlights how modern Computational Imaging effectively bridges physical modeling and machine learning to overcome the fundamental limits of physical hardware.
