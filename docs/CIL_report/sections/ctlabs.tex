@@ -1,0 +1,199 @@
+\section{Simulating and Reconstructing Tomography Data}
+
+In this last section, we will go trough a series of practical experiments to, using the \textit{DeepInverse} library, to simulate and reconstruct tomography data.
+
+\subsection{Model-Based Reconstruction}
+
+The first objective is recovering an image $u$ from a set of noisy projections $y$. The measurements are modelled via the \textit{discrete Radon transform}
+\begin{equation}
+    \begin{aligned} \mathbf{y}(\boldsymbol{\theta},\rho) &= \int_{L_{\boldsymbol{\theta},\rho}}~u~d\sigma
+    \end{aligned} \qquad \boldsymbol{\theta} \in \mathbb{R}^2,~ \| \boldsymbol{\theta}\|=1, \quad \rho \in \mathbb{R}_+
+\end{equation}
+where the collection of projections across all angles is called the \textit{sinogram}. 
+
+Three acquisition geometries are studied: (i) \textit{full-angle} (180 projections), (ii) \textit{sparse-angle} (36 uniformly sampled angles), and (iii) \textit{limited-angle} (between 30 and 150 degrees). An example of the code for the definition of the forward model with 36 angles is shown in listing \ref{code:forward}.
+
+\begin{lstlisting}[language=Python, label={code:forward}, caption={Defining the sparse-angle CT forward model with \textit{deepinv}.}]
+import deepinv as dinv
+import torch
+
+theta_sparse = torch.tensor(
+    np.linspace(0, 180, 36, endpoint=False)
+).to(device)
+
+tomo_sparse = dinv.physics.Tomography(
+    angles=theta_sparse,
+    img_width=128,
+    circle=False,
+    device=device
+)
+
+sinogram_sparse = tomo_sparse(u_SL_small)
+\end{lstlisting}
+
+Resulting sinograms can be seen in figure \ref{fig:sinograms}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\linewidth]{images/sinograms.png}
+    \caption{Original image (on the left) and its sinograms under full-angle, sparse-angle, and limited-angle geometries.}
+    \label{fig:sinograms}
+\end{figure}
+
+Gaussian noise is added to the sinogram via a custom class that scales the noise amplitude by $\max|x|$, making it signal-dependent (Listing~\ref{code:noise}).
+
+\begin{lstlisting}[language=Python, label={code:noise}, caption={Custom Gaussian noise model for CT sinograms.}]
+class GaussianNoiseCT(dinv.physics.GaussianNoise):
+    def forward(self, x, sigma=None, seed=None, **kwargs):
+        self.update_parameters(sigma=sigma, **kwargs)
+        self.to(x.device)
+        return (x + torch.max(torch.abs(x))
+                * self.randn_like(x, seed=seed)
+                * self.sigma[(...,) + (None,) * (x.dim()-1)])
+\end{lstlisting}
+
+\subsubsection{Näive inversion: Filtered Back-Projection}
+
+An inverse problem can be representing as recovering $f$ from
+$y = \text{noise}(A(u))$. When $A$ is linear, in the discrete formulation, this reduces to
+\begin{equation}
+    y = \mathbf{A} u + \epsilon, \quad u \in \mathbb{R}^n, \epsilon \in \mathbb{R}^m, \mathbf{A} \in \mathbb{R}^{m \times n}
+\end{equation}
+
+The simplest reconstruction strategy is to use \textit{Filtered Back-Projection} (FBP) to solve $u_{\text{naive}} = \mathbf{A}^{-1} y$. It is available directly from the physics object via \textit{tomo.fbp(sinogram)}. While fast, FBP is highly sensitive to noise and to incomplete angular coverage.
+
+\subsubsection{Gradient Descent (unregularized)}
+
+To avoid assembling the dense matrix $\mathbf{A}$, iterative solvers minimize $\frac{1}{2}\|\mathbf{A}u - y\|^2$ via gradient descent:
+\begin{equation}
+    \left\{
+    \begin{aligned}
+    u^{0} & \text{ given} \\
+    u^{(k+1)} =&\  \mathbf{A}^T(\mathbf{A}u^{(k)}-y)
+    \end{aligned}
+    \right.
+\end{equation}
+
+In \textit{deepinv} this is assembled with \textit{optim\_builder} using a \textit{ZeroPrior} (example in listing \ref{code:gd}).
+
+\begin{lstlisting}[language=Python, label={code:gd}, caption={Unregularised gradient descent reconstruction.}]
+prior = dinv.optim.prior.ZeroPrior()
+
+opt = dinv.optim.optim_builder(
+    iteration="GD",
+    prior=dinv.optim.prior.ZeroPrior(),
+    data_fidelity=dinv.optim.data_fidelity.L2(),
+    max_iter=100,
+    crit_conv="residual",
+    thres_conv=1e-4,
+    early_stop=True,
+    params_algo={"stepsize": 1.0}
+)
+u_hat, metrics = opt(y, tomo_exp, compute_metrics=True)
+\end{lstlisting}
+
+Results can be seen in figure \ref{fig:gradescent}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\linewidth]{images/gradescent.png}
+    \caption{Reconstruction with gradient method results.}
+    \label{fig:gradescent}
+\end{figure}
+
+\subsubsection{Tikhonov Regularisation}
+
+Penalizing large norms yields the \textit{Tikhonov} problem:
+\begin{equation}
+    u_\alpha^* = \arg\min_{u} \left\{ \tfrac{1}{2}\|\mathbf{A}u - y\|^2 + \alpha\|u\|^2 \right\}.
+\end{equation}
+
+but $u_\alpha^*$ can be found solving a linear system with symmetric, positive definite, matrix.
+The first-order optimality condition gives $(\mathbf{A}^\top\mathbf{A} + \alpha I)u_\alpha^* = \mathbf{A}^\top y$, which is solved iteratively by replacing \textit{ZeroPrior} with \textit{dinv.optim.Tikhonov()} and setting \textit{"lambda": 0.1} in \textit{params\_algo}. The rest is similar to listing \ref{code:gd}.
+
+\subsubsection{LASSO / Sparsity-Promoting Regularisation}
+
+The lasso penalizes solutions with large $1$-norms, promoting solutions with few non-zero entries:
+\begin{equation}
+    u_\alpha^* = \arg\min_{u} \left\{ \tfrac{1}{2}\|\mathbf{A}u - y\|^2 + \alpha\|u\|_1 \right\}.
+\end{equation}
+This is solved by \textit{Proximal Gradient Descent} (PGD), where the proximal operator of $\alpha\|\cdot\|_1$ is soft-thresholding $S_\alpha(u) = \operatorname{sign}(u)(|u|-\alpha)^+$.
+
+In code, we just have to \textit{iteration="PGD"} and \textit{prior=dinv.optim.L1Prior()}. 
+
+The above algorithms need to be tuned with hyperparameters. We can visualize how the MSE, PSNR, and SSIM vary while we change them to find the optimal. Results are shown in figure \ref{fig:msepsnrssim}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\linewidth]{images/msecompar.png}
+    \caption{Hyperparameters comparison: MSE (left), PSNR (center), and SSIM (right).}
+    \label{fig:msepsnrssim}
+\end{figure}
+
+\subsection{Learned Regularisation Functionals}
+TODO
+The second part shifts to the MNIST dataset ($28 \times 28$) and a supervised setting. Pairs $(y_i, u_i)$ are generated by applying the sparse CT physics to each image. Variational models (LASSO with \textit{L1Prior} and Total Variation with \textit{TVPrior}) serve as baselines and are evaluated over the test set using \textit{dinv.training.test}.
+
+\subsection{Plug-and-Play with a Pre-trained Denoiser}
+
+\textit{Plug-and-Play} (PnP) replaces the proximal step in PGD with a pre-trained denoising network $D_{\theta,\sigma}$:
+\begin{equation}
+\begin{aligned}
+    z^{(k+1)} &= u^{(k)} - \tau \mathbf{A}^\top(\mathbf{A}u^{(k)}-y), \\
+    u^{(k+1)} &= D_{\theta,\sigma}(z^{(k+1)}).
+\end{aligned}
+\end{equation}
+A \textit{DnCNN} network pre-trained on natural images is downloaded and used directly (Listing~\ref{code:pnp}).
+
+\begin{lstlisting}[language=Python, label={code:pnp}, caption={PnP-PGD with a pre-trained DnCNN denoiser.}]
+denoiser = DnCNN(in_channels=1, out_channels=1,
+                 pretrained="download", device=device)
+prior = PnP(denoiser=denoiser)
+
+modelPnP = optim_builder(
+    iteration="PGD",
+    prior=prior,
+    data_fidelity=dinv.optim.data_fidelity.L2(),
+    early_stop=True,
+    max_iter=200,
+    params_algo={"stepsize": 0.8, "g_param": 0.1}
+)
+\end{lstlisting}
+
+\subsection{Training a Task-Specific Denoiser}
+
+Students then train a \textit{DnCNN} specifically on MNIST: a denoising dataset $\{(\tilde{u}_i, u_i)\}$ is generated with $\tilde{u}_i = u_i + \epsilon_i$, $\epsilon_i \sim \mathcal{N}(0, \sigma^2 I)$, and supervised training minimises
+\begin{equation}
+    \mathcal{L}_{\text{den}}(\theta) = \frac{1}{N}\sum_{i=1}^N \|D_\theta(\tilde{u}_i) - u_i\|^2.
+\end{equation}
+Training uses \textit{dinv.Trainer} with the Adam optimiser for 20 epochs. The trained denoiser is then plugged into PnP-PGD and evaluated on the CT test set, closing the loop between learned priors and physics-based reconstruction.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\linewidth]{images/pnp_trained.png}
+    \caption{Reconstruction on MNIST CT test set: variational L1 (left), PnP with pre-trained DnCNN (centre), PnP with task-trained DnCNN (right).}
+    \label{fig:pnp}
+\end{figure}
+
+\subsection{Summary}
+
+The lab progressively builds from analytic inversion (FBP) to variational regularisation (Tikhonov, LASSO, TV) and finally to learned Plug-and-Play priors. Table~\ref{tab:methods} summarises the methods.
+
+\begin{table}[h]
+\centering
+\caption{Summary of reconstruction methods explored in the lab.}
+\label{tab:methods}
+\begin{tabular}{lccc}
+\hline
+\textbf{Method} & \textbf{Algorithm} & \textbf{Prior} & \textbf{Key parameter} \\
+\hline
+FBP             & Analytic           & None           & ---                    \\
+GD (unregul.)   & Gradient Descent   & None           & stepsize $\tau$        \\
+Tikhonov        & Gradient Descent   & $\|u\|^2$      & $\lambda, \tau$        \\
+LASSO           & PGD / ISTA         & $\|u\|_1$      & $\lambda, \tau$        \\
+TV              & PGD                & $\|\nabla u\|_1$ & $\lambda, \tau$      \\
+PnP (pretrained)& PGD                & DnCNN          & $\sigma_\text{PnP}$    \\
+PnP (trained)   & PGD                & DnCNN (MNIST)  & $\sigma_\text{PnP}$    \\
+\hline
+\end{tabular}
+\end{table}
