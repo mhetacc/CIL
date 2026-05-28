@@ -77,8 +77,10 @@
         "photosites",
         "polyarchy",
         "pretrained",
+        "regularisation",
         "subcomponents",
         "topicalization",
+        "undersampling",
         "virality"
     ],
     "editor.wordWrap": "on",

@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{0}
+\begin{thebibliography}{7}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -36,5 +36,88 @@
 \providecommand\bibinfo[2]{#2}
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Aubert and Kornprobst(2008)]%
+        {aubert_mathematical_2008}
+\bibfield{author}{\bibinfo{person}{Gilles Aubert} {and} \bibinfo{person}{Pierre Kornprobst}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Mathematical {Problems} in {Image} {Processing}: {Partial} {Differential} {Equations} and the {Calculus} of {Variations}}}.
+\newblock \bibinfo{publisher}{Springer Science \& Business Media}.
+\newblock
+\showISBNx{978-0-387-21766-6}
+\newblock
+\shownote{Google-Books-ID: NpcMBwAAQBAJ}.
+
+
+\bibitem[Bouman(2022)]%
+        {bouman_foundations_2022}
+\bibfield{author}{\bibinfo{person}{Charles~Addison Bouman}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Foundations of {Computational} {Imaging}: {A} {Model}-{Based} {Approach}}}.
+\newblock \bibinfo{publisher}{Society for Industrial and Applied Mathematics}.
+\newblock
+\showISBNx{978-1-61197-712-7}
+\newblock
+\shownote{Google-Books-ID: d2IEzwEACAAJ}.
+
+
+\bibitem[Chan and Shen(2005)]%
+        {chan_image_2005}
+\bibfield{author}{\bibinfo{person}{Tony~F. Chan} {and} \bibinfo{person}{Jianhong~(Jackie) Shen}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Image {Processing} and {Analysis}}}.
+\newblock \bibinfo{publisher}{Society for Industrial and Applied Mathematics}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1137/1.9780898717877}
+\showDOI{\tempurl}
+\newblock
+\shownote{\_eprint: https://epubs.siam.org/doi/pdf/10.1137/1.9780898717877}.
+
+
+\bibitem[DeepInverse({[n.\,d.]})]%
+        {deepinverse_examples_nodate}
+\bibfield{author}{\bibinfo{person}{DeepInverse}.} \bibinfo{year}{[n.\,d.]}\natexlab{}.
+\newblock \bibinfo{title}{Examples — deepinv 0.4.0 documentation}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://deepinv.github.io/deepinv/auto_examples/index.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Meyer({[n.\,d.]})]%
+        {meyer_computational_nodate}
+\bibfield{author}{\bibinfo{person}{Johannes Meyer}.} \bibinfo{year}{[n.\,d.]}\natexlab{}.
+\newblock \bibinfo{title}{Computational {Imaging} - {Course} {Notes} — {Computational} {Imaging} - {Course} {Notes}}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://computational-imaging.de/book/intro.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Peyré({[n.\,d.]})]%
+        {peyre_numerical_nodate}
+\bibfield{author}{\bibinfo{person}{Gabriel Peyré}.} \bibinfo{year}{[n.\,d.]}\natexlab{}.
+\newblock \bibinfo{title}{Numerical {Tours} - {A} {Numerical} {Tour} of {Data} {Science}}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.numerical-tours.com/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[van Leeuwen and Brune({[n.\,d.]})]%
+        {van_leeuwen_1_nodate}
+\bibfield{author}{\bibinfo{person}{Tristan van Leeuwen} {and} \bibinfo{person}{Christoph Brune}.} \bibinfo{year}{[n.\,d.]}\natexlab{}.
+\newblock \bibinfo{title}{1. {What} is an inverse problem — 10 {Lectures} on {Inverse} {Problems} and {Imaging}}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://tristanvanleeuwen.github.io/IP_and_Im_Lectures/what_is.html}
+\showURL{%
+\tempurl}
+
 
 \end{thebibliography}

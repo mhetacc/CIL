@@ -12,45 +12,52 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 0 entries,
+Warning--empty address in aubert_mathematical_2008
+Warning--empty address in bouman_foundations_2022
+Warning--empty address in chan_image_2005
+Warning--empty year in deepinverse_examples_nodate
+Warning--empty year in meyer_computational_nodate
+Warning--empty year in peyre_numerical_nodate
+Warning--empty year in van_leeuwen_1_nodate
+You've used 7 entries,
             5981 wiz_defined-function locations,
-            1473 strings with 17886 characters,
-and the built_in function-call counts, 105 in all, are:
-= -- 0
-> -- 0
+            1510 strings with 19261 characters,
+and the built_in function-call counts, 5237 in all, are:
+= -- 514
+> -- 161
 < -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 14
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 1
-empty$ -- 1
-format.name$ -- 0
-if$ -- 2
++ -- 49
+- -- 70
+* -- 335
+:= -- 620
+add.period$ -- 41
+call.type$ -- 7
+change.case$ -- 38
+chr.to.int$ -- 7
+cite$ -- 14
+duplicate$ -- 457
+empty$ -- 335
+format.name$ -- 82
+if$ -- 1120
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 40
-num.names$ -- 0
-pop$ -- 1
+missing$ -- 6
+newline$ -- 123
+num.names$ -- 49
+pop$ -- 234
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 74
 quote$ -- 0
-skip$ -- 1
+skip$ -- 165
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 282
+swap$ -- 34
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 165
+warning$ -- 7
+while$ -- 49
 width$ -- 0
-write$ -- 39
-(There was 1 warning)
+write$ -- 195
+(There were 8 warnings)
