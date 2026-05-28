@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex cil_report"] 1779971765.5435 "cil_report.aux" "cil_report.bbl" "cil_report" 1779971770.0277 0
+["bibtex cil_report"] 1779974650.36328 "cil_report.aux" "cil_report.bbl" "cil_report" 1779974654.05023 0
   "./report.bib" 1779971681.77788 16242 841fd076c734dbaa2d2b7458f67d6c8e ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/acmart/ACM-Reference-Format.bst" 1653856601 90333 ccee583820c555b8fd3c6d1b9f362b14 ""
-  "cil_report.aux" 1779971769.63125 3558 7261ef905b285be9190f5b590eca1dff "pdflatex"
+  "cil_report.aux" 1779974653.64298 4094 bfb97a352db5f6f9c14bd3fc6fe26b29 "pdflatex"
   (generated)
   "cil_report.bbl"
   "cil_report.blg"
   (rewritten before read)
-["pdflatex"] 1779971768.54412 "/home/mhetac/Documents/GitHub/CIL/docs/CIL_report/cil_report.tex" "cil_report.pdf" "cil_report" 1779971770.02791 0
+["pdflatex"] 1779974652.2335 "/home/mhetac/Documents/GitHub/CIL/docs/CIL_report/cil_report.tex" "cil_report.pdf" "cil_report" 1779974654.05043 0
   "/home/mhetac/Documents/GitHub/CIL/docs/CIL_report/cil_report.tex" 1779959100.65191 8990 ae6ef3be9e0b911734933e04e347e6d8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc" 1490131464 2921 8ca0eb0831f9bc5da080d3697cfe67bf ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc" 1490131464 2933 9ad527ce78d7c5fa0a642dead095f172 ""
@@ -230,13 +230,18 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1775001600 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1775825595.13604 4547210 0b4d8bce3d83ee4f50b88a57a6a0d7ef ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1775825282 7759954 2e905753369464014d5d6615f296b3d8 ""
-  "cil_report.aux" 1779971769.63125 3558 7261ef905b285be9190f5b590eca1dff "pdflatex"
-  "cil_report.bbl" 1779971765.63915 8474 17c8573fccea9f97d114b2e924ec9dad "bibtex cil_report"
-  "cil_report.out" 1779971769.63225 2112 75b54045c06bf9ff99bc5b8a5cc8d4dd "pdflatex"
+  "cil_report.aux" 1779974653.64298 4094 bfb97a352db5f6f9c14bd3fc6fe26b29 "pdflatex"
+  "cil_report.bbl" 1779974650.45971 8474 17c8573fccea9f97d114b2e924ec9dad "bibtex cil_report"
+  "cil_report.out" 1779974653.64298 2112 eeedf93e1f0e0c15ff1b9cb5dd0aeafd "pdflatex"
   "cil_report.tex" 1779959100.65191 8990 ae6ef3be9e0b911734933e04e347e6d8 ""
+  "images/ctfullangle.png" 1779974098.159 121414 e3a155d3a03c491e9b7b7e83c2717739 ""
+  "images/ctground.png" 1779974098.18464 67608 fdcfa53b7265b57e14f282174990fa86 ""
+  "images/ctlimitedangle.png" 1779974098.13979 102861 a587c99242e27b9440bf59fd3f29626a ""
+  "images/ctsparseangle.png" 1779974098.12974 134288 b751c1b5780c322cab5809524768777a ""
+  "images/ismexamples.png" 1779971863.89433 234435 79859234aea5592731b578ccf9528760 ""
   "lstlisting_settings.tex" 1779889912.49489 923 6c327df865b68b4ddddc74a9f42a2ca7 ""
-  "sections/computertomography.tex" 1779890866.32959 3089 3d9de5e45c021b908ddad507a24e6428 ""
-  "sections/imagescan.tex" 1779971768.30834 9361 c10cd10c9b3a34e31a6bb17543dcd42f ""
+  "sections/computertomography.tex" 1779974650.54871 4345 af6eb000b2ec5dd7dcab852e8fcdf0f6 ""
+  "sections/imagescan.tex" 1779971983.26891 9557 97a395adfdd4de95122524363b315292 ""
   "sections/introduction.tex" 1779962974.10082 5630 9ae4d64071e9ac89ec89029cc01f364d ""
   (generated)
   "cil_report.aux"

@@ -6,7 +6,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: report.bib
-Warning--I didn't find a database entry for "sebastiani2024ct"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
@@ -21,7 +20,7 @@ Warning--empty year in peyre_numerical_nodate
 Warning--empty year in van_leeuwen_1_nodate
 You've used 12 entries,
             5981 wiz_defined-function locations,
-            1555 strings with 21066 characters,
+            1554 strings with 21050 characters,
 and the built_in function-call counts, 11948 in all, are:
 = -- 1495
 > -- 452
@@ -60,4 +59,4 @@ warning$ -- 7
 while$ -- 80
 width$ -- 0
 write$ -- 311
-(There were 8 warnings)
+(There were 7 warnings)

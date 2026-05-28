@@ -45,7 +45,14 @@ In the ISM setting, the forward model generalizes to a family of $d$ equations
 \end{equation} 
 where $\mathbf{y}_d \in \mathbb{N}^N$ is the measured image from detector $d$ with $p = n_1 \times n_2$ pixels, $\mathbf{u} \in \mathbb{R}_+^N$ is the unknown object, $\mathbf{A}_d \in \mathbb{R}^{N \times N}$ is the Toeplitz matrix to compute the convolution with the PSF $h_d$, and $\mathcal{P}$ is the Poisson noise.
 
-Optical aberrations such as spherical aberration, astigmatism, and coma are common sources of PSF distortion in fluorescence microscopy, arising from refractive index mismatches, intentional depth encoding, or element misalignment. As illustrated by figure , these aberrations manifest as characteristic deformations in both the detector offset patterns and the reconstructed PSF shapes, degrading spatial resolution and image quality. Accurately modeling and correcting for these effects is therefore essential for reliable reconstruction in any computational microscopy pipeline.
+Optical aberrations such as spherical aberration, astigmatism, and coma are common sources of PSF distortion in fluorescence microscopy, arising from refractive index mismatches, intentional depth encoding, or element misalignment. As illustrated by figure \ref{fig:ismexamples}, these aberrations manifest as characteristic deformations in both the detector offset patterns and the reconstructed PSF shapes, degrading spatial resolution and image quality. Accurately modeling and correcting for these effects is therefore essential for reliable reconstruction in any computational microscopy pipeline.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=.8\linewidth]{images/ismexamples.png}
+  \caption{Aberrations examples on ISM.}
+  \label{fig:ismexamples}
+\end{figure}
 
 \subsection{From Microscopy to Tomography}
 
