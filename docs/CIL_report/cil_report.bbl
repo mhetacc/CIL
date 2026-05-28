@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{7}
+\begin{thebibliography}{12}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -84,6 +84,30 @@
 \tempurl}
 
 
+\bibitem[Fersini et~al\mbox{.}(2025)]%
+        {fersini_wavefront_2025}
+\bibfield{author}{\bibinfo{person}{Francesco Fersini}, \bibinfo{person}{Alessandro Zunino}, \bibinfo{person}{Pietro Morerio}, \bibinfo{person}{Francesca Baldini}, \bibinfo{person}{Alberto Diaspro}, \bibinfo{person}{Martin~J. Booth}, \bibinfo{person}{Alessio~Del Bue}, {and} \bibinfo{person}{Giuseppe Vicidomini}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Wavefront estimation through structured detection in laser scanning microscopy}.
+\newblock \bibinfo{journal}{\emph{Biomedical Optics Express}} \bibinfo{volume}{16}, \bibinfo{number}{5} (\bibinfo{date}{May} \bibinfo{year}{2025}), \bibinfo{pages}{2135--2155}.
+\newblock
+\showISSN{2156-7085}
+\urldef\tempurl%
+\url{https://doi.org/10.1364/BOE.559899}
+\showDOI{\tempurl}
+
+
+\bibitem[Liu et~al\mbox{.}(2025)]%
+        {liu_revisiting_2025}
+\bibfield{author}{\bibinfo{person}{Yan Liu}, \bibinfo{person}{Vasiliki Stergiopoulou}, \bibinfo{person}{Jonathan Chuah}, \bibinfo{person}{Eric Bezzam}, \bibinfo{person}{Gert-Jan Both}, \bibinfo{person}{Michael Unser}, \bibinfo{person}{Daniel Sage}, {and} \bibinfo{person}{Jonathan Dong}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Revisiting {PSF} models: unifying framework and high-performance implementation}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2502.03170v2}
+\showURL{%
+\tempurl}
+
+
 \bibitem[Meyer({[n.\,d.]})]%
         {meyer_computational_nodate}
 \bibfield{author}{\bibinfo{person}{Johannes Meyer}.} \bibinfo{year}{[n.\,d.]}\natexlab{}.
@@ -108,6 +132,20 @@
 \tempurl}
 
 
+\bibitem[Richards and Wolf(1959)]%
+        {richards_electromagnetic_1959}
+\bibfield{author}{\bibinfo{person}{B. Richards} {and} \bibinfo{person}{E. Wolf}.} \bibinfo{year}{1959}\natexlab{}.
+\newblock \showarticletitle{Electromagnetic {Diffraction} in {Optical} {Systems}. {II}. {Structure} of the {Image} {Field} in an {Aplanatic} {System}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the Royal Society of London Series A}}  \bibinfo{volume}{253} (\bibinfo{date}{Dec.} \bibinfo{year}{1959}), \bibinfo{pages}{358--379}.
+\newblock
+\showISSN{0080-46301364-5021}
+\urldef\tempurl%
+\url{https://doi.org/10.1098/rspa.1959.0200}
+\showDOI{\tempurl}
+\newblock
+\shownote{ADS Bibcode: 1959RSPSA.253..358R}.
+
+
 \bibitem[van Leeuwen and Brune({[n.\,d.]})]%
         {van_leeuwen_1_nodate}
 \bibfield{author}{\bibinfo{person}{Tristan van Leeuwen} {and} \bibinfo{person}{Christoph Brune}.} \bibinfo{year}{[n.\,d.]}\natexlab{}.
@@ -118,6 +156,30 @@
 \url{https://tristanvanleeuwen.github.io/IP_and_Im_Lectures/what_is.html}
 \showURL{%
 \tempurl}
+
+
+\bibitem[Zunino et~al\mbox{.}(2025)]%
+        {zunino_structured_2025}
+\bibfield{author}{\bibinfo{person}{Alessandro Zunino}, \bibinfo{person}{Giacomo Garrè}, \bibinfo{person}{Eleonora Perego}, \bibinfo{person}{Sabrina Zappone}, \bibinfo{person}{Mattia Donato}, \bibinfo{person}{Nadine Vastenhouw}, {and} \bibinfo{person}{Giuseppe Vicidomini}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Structured detection for simultaneous super-resolution and optical sectioning in laser scanning microscopy}.
+\newblock \bibinfo{journal}{\emph{Nature Photonics}} \bibinfo{volume}{19}, \bibinfo{number}{8} (\bibinfo{date}{Aug.} \bibinfo{year}{2025}), \bibinfo{pages}{888--897}.
+\newblock
+\showISSN{1749-4893}
+\urldef\tempurl%
+\url{https://doi.org/10.1038/s41566-025-01695-0}
+\showDOI{\tempurl}
+
+
+\bibitem[Zunino et~al\mbox{.}(2023)]%
+        {zunino_open-source_2023}
+\bibfield{author}{\bibinfo{person}{Alessandro Zunino}, \bibinfo{person}{Eli Slenders}, \bibinfo{person}{Francesco Fersini}, \bibinfo{person}{Andrea Bucci}, \bibinfo{person}{Mattia Donato}, {and} \bibinfo{person}{Giuseppe Vicidomini}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Open-source tools enable accessible and advanced image scanning microscopy data analysis}.
+\newblock \bibinfo{journal}{\emph{Nature Photonics}} \bibinfo{volume}{17}, \bibinfo{number}{6} (\bibinfo{date}{June} \bibinfo{year}{2023}), \bibinfo{pages}{457--458}.
+\newblock
+\showISSN{1749-4893}
+\urldef\tempurl%
+\url{https://doi.org/10.1038/s41566-023-01216-x}
+\showDOI{\tempurl}
 
 
 \end{thebibliography}

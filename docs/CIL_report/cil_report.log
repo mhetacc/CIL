@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.4.10)  28 MAY 2026 12:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.4.10)  28 MAY 2026 14:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -872,24 +872,18 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 9.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 15.
- [1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}]) (./sections/imagescan.tex
-Underfull \vbox (badness 1484) has occurred while \output is active []
-
- [2.2]
+ [1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}]) (./sections/imagescan.tex [2.2]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 32.
+(Font)              scaled to size 7.3pt on input line 17.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 32.
+(Font)              scaled to size 5.5pt on input line 17.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 9.0pt on input line 49.
+(Font)              scaled to size 9.0pt on input line 27.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 7.3pt on input line 49.
+(Font)              scaled to size 7.3pt on input line 27.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 5.5pt on input line 49.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3.3{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc}]) [4.4] (./sections/computertomography.tex
+(Font)              scaled to size 5.5pt on input line 27.
+ [3.3{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc}] [4.4]) (./sections/computertomography.tex
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 9.
 
@@ -904,9 +898,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5.5]
 LaTeX Info: Redefining \tempurl on input line 82.
-LaTeX Info: Redefining \tempurl on input line 94.
+LaTeX Info: Redefining \tempurl on input line 95.
 LaTeX Info: Redefining \tempurl on input line 106.
 LaTeX Info: Redefining \tempurl on input line 118.
+LaTeX Info: Redefining \tempurl on input line 130.
+LaTeX Info: Redefining \tempurl on input line 143.
+LaTeX Info: Redefining \tempurl on input line 156.
+LaTeX Info: Redefining \tempurl on input line 169.
+LaTeX Info: Redefining \tempurl on input line 181.
 )
 
 Package natbib Warning: There were undefined citations.
@@ -926,21 +925,21 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
 ) [6.6] (./cil_report.aux)
 Package rerunfilecheck Info: File `cil_report.out' has not changed.
-(rerunfilecheck)             Checksum: 032F327EFAF56BACD4460C997561B835;2112.
+(rerunfilecheck)             Checksum: 75B54045C06BF9FF99BC5B8A5CC8D4DD;2112.
  ) 
 Here is how much of TeX's memory you used:
- 25880 strings out of 476034
- 438292 string characters out of 5792864
+ 25843 strings out of 476034
+ 437853 string characters out of 5792864
  1865388 words of memory out of 6000000
- 45274 multiletter control sequences out of 15000+600000
- 681922 words of font info for 385 fonts, out of 8000000 for 9000
+ 45251 multiletter control sequences out of 15000+600000
+ 671238 words of font info for 360 fonts, out of 8000000 for 9000
  1298 hyphenation exceptions out of 8191
- 85i,6n,131p,2248b,681s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathBMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathRM.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTZ.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on cil_report.pdf (6 pages, 510890 bytes).
+ 85i,6n,131p,1306b,681s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathRM.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTZ.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on cil_report.pdf (6 pages, 510163 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 222 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
  84065 words of extra memory for PDF output out of 89155 (max. 10000000)
 

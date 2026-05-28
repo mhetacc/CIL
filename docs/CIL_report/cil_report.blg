@@ -19,45 +19,45 @@ Warning--empty year in deepinverse_examples_nodate
 Warning--empty year in meyer_computational_nodate
 Warning--empty year in peyre_numerical_nodate
 Warning--empty year in van_leeuwen_1_nodate
-You've used 7 entries,
+You've used 12 entries,
             5981 wiz_defined-function locations,
-            1510 strings with 19261 characters,
-and the built_in function-call counts, 5237 in all, are:
-= -- 514
-> -- 161
+            1555 strings with 21066 characters,
+and the built_in function-call counts, 11948 in all, are:
+= -- 1495
+> -- 452
 < -- 0
-+ -- 49
-- -- 70
-* -- 335
-:= -- 620
-add.period$ -- 41
-call.type$ -- 7
-change.case$ -- 38
-chr.to.int$ -- 7
-cite$ -- 14
-duplicate$ -- 457
-empty$ -- 335
-format.name$ -- 82
-if$ -- 1120
++ -- 151
+- -- 171
+* -- 883
+:= -- 1291
+add.period$ -- 67
+call.type$ -- 12
+change.case$ -- 89
+chr.to.int$ -- 12
+cite$ -- 19
+duplicate$ -- 939
+empty$ -- 676
+format.name$ -- 203
+if$ -- 2776
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 6
-newline$ -- 123
-num.names$ -- 49
-pop$ -- 234
+missing$ -- 22
+newline$ -- 185
+num.names$ -- 84
+pop$ -- 395
 preamble$ -- 1
-purify$ -- 74
+purify$ -- 165
 quote$ -- 0
-skip$ -- 165
+skip$ -- 339
 stack$ -- 0
-substring$ -- 282
-swap$ -- 34
+substring$ -- 773
+swap$ -- 88
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 165
+type$ -- 259
 warning$ -- 7
-while$ -- 49
+while$ -- 80
 width$ -- 0
-write$ -- 195
+write$ -- 311
 (There were 8 warnings)

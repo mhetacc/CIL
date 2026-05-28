@@ -81,7 +81,8 @@
         "subcomponents",
         "topicalization",
         "undersampling",
-        "virality"
+        "virality",
+        "widefield"
     ],
     "editor.wordWrap": "on",
     "cSpell.enabled": true
