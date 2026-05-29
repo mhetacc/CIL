@@ -2,6 +2,8 @@
 
 In this last section, we will go trough a series of practical experiments to, using the \textit{DeepInverse} library, to simulate and reconstruct tomography data.
 
+The source code for this section can be seen in the Jupyter noteebok at the following link: 
+
 \subsection{Model-Based Reconstruction}
 
 The first objective is recovering an image $u$ from a set of noisy projections $y$. The measurements are modelled via the \textit{discrete Radon transform}
@@ -121,11 +123,11 @@ This is solved by \textit{Proximal Gradient Descent} (PGD), where the proximal o
 
 In code, we just have to \textit{iteration="PGD"} and \textit{prior=dinv.optim.L1Prior()}. 
 
-The above algorithms need to be tuned with hyperparameters. We can visualize how the MSE, PSNR, and SSIM vary while we change them to find the optimal. Results are shown in figure \ref{fig:msepsnrssim}.
+The above algorithms need to be tuned with hyperparameters, for example \textit{step size}. We can visualize how the MSE, PSNR, and SSIM vary with different step sizes for the three algorithms. Results are shown in figure \ref{fig:msepsnrssim}. It is interesting to notice that, with \textit{deepinv} default $\lambda$ value, the zerio-prior algorithm seems to outperform the others.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=.8\linewidth]{images/msecompar.png}
+    \includegraphics[width=\linewidth]{images/stepsizecompar.png}
     \caption{Hyperparameters comparison: MSE (left), PSNR (center), and SSIM (right).}
     \label{fig:msepsnrssim}
 \end{figure}

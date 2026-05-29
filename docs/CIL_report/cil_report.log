@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.4.10)  28 MAY 2026 17:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.4.10)  29 MAY 2026 11:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -929,62 +929,62 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ) (./sections/ctlabs.tex (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 16.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 18.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 16.
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 16.
+(Font)              scaled to size 8.0pt on input line 18.
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 18.
  (/usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 16.
+(Font)              scaled to size 9.0pt on input line 18.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 7.0pt on input line 16.
+(Font)              scaled to size 7.0pt on input line 18.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 17.
+(Font)              scaled to size 5.0pt on input line 19.
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 7.0pt on input line 17.
+(Font)              scaled to size 7.0pt on input line 19.
  [6.6{/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}]
-<images/sinograms.png, id=177, 874.467pt x 242.8272pt>
+<images/sinograms.png, id=175, 874.467pt x 242.8272pt>
 File: images/sinograms.png Graphic file (type png)
 <use images/sinograms.png>
-Package pdftex.def Info: images/sinograms.png  used on input line 38.
+Package pdftex.def Info: images/sinograms.png  used on input line 40.
 (pdftex.def)             Requested size: 344.005pt x 95.52478pt.
 
 
-Class acmart Warning: A possible image without description on input line 41.
+Class acmart Warning: A possible image without description on input line 43.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7.7 <./images/ctground.png> <./images/ctfullangle.png> <./images/ctlimitedangle.png> <./images/ctsparseangle.png>]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 57.
-<images/gradescent.png, id=199, 552.8655pt x 297.0297pt>
+(Font)              scaled to size 9.0pt on input line 59.
+<images/gradescent.png, id=198, 552.8655pt x 297.0297pt>
 File: images/gradescent.png Graphic file (type png)
 <use images/gradescent.png>
-Package pdftex.def Info: images/gradescent.png  used on input line 99.
+Package pdftex.def Info: images/gradescent.png  used on input line 101.
 (pdftex.def)             Requested size: 344.005pt x 184.82275pt.
 
 
-Class acmart Warning: A possible image without description on input line 102.
+Class acmart Warning: A possible image without description on input line 104.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8.8 <./images/sinograms.png>]
-<images/msecompar.png, id=230, 714.7503pt x 259.4493pt>
-File: images/msecompar.png Graphic file (type png)
-<use images/msecompar.png>
-Package pdftex.def Info: images/msecompar.png  used on input line 128.
-(pdftex.def)             Requested size: 344.005pt x 124.8747pt.
+<images/stepsizecompar.png, id=230, 1244.9712pt x 461.3235pt>
+File: images/stepsizecompar.png Graphic file (type png)
+<use images/stepsizecompar.png>
+Package pdftex.def Info: images/stepsizecompar.png  used on input line 130.
+(pdftex.def)             Requested size: 430.00462pt x 159.3398pt.
 
 
-Class acmart Warning: A possible image without description on input line 131.
+Class acmart Warning: A possible image without description on input line 133.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -996,18 +996,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <images/pnp_trained.png, id=242, 388.0899pt x 152.4897pt>
 File: images/pnp_trained.png Graphic file (type png)
 <use images/pnp_trained.png>
-Package pdftex.def Info: images/pnp_trained.png  used on input line 173.
+Package pdftex.def Info: images/pnp_trained.png  used on input line 175.
 (pdftex.def)             Requested size: 344.005pt x 135.17557pt.
 
 
-Class acmart Warning: A possible image without description on input line 176.
+Class acmart Warning: A possible image without description on input line 178.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 188.
-[10.10 <./images/msecompar.png>]) (./cil_report.bbl
+(Font)              scaled to size 9.0pt on input line 190.
+[10.10 <./images/stepsizecompar.png>]) (./cil_report.bbl
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 7.0pt on input line 43.
 LaTeX Info: Redefining \tempurl on input line 82.
@@ -1042,15 +1042,15 @@ Package rerunfilecheck Info: File `cil_report.out' has not changed.
 (rerunfilecheck)             Checksum: 68EBE10E91C483D98CD7DDBBD1250056;3547.
  ) 
 Here is how much of TeX's memory you used:
- 26681 strings out of 476034
- 449321 string characters out of 5792864
- 1885388 words of memory out of 6000000
+ 26684 strings out of 476034
+ 449434 string characters out of 5792864
+ 1887388 words of memory out of 6000000
  45891 multiletter control sequences out of 15000+600000
- 711180 words of font info for 434 fonts, out of 8000000 for 9000
+ 711551 words of font info for 436 fonts, out of 8000000 for 9000
  1298 hyphenation exceptions out of 8191
  85i,13n,131p,1306b,2286s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathBMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathBMI5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathRM.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTZ.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on cil_report.pdf (12 pages, 1353287 bytes).
+Output written on cil_report.pdf (12 pages, 1639101 bytes).
 PDF statistics:
  412 PDF objects out of 1000 (max. 8388607)
  332 compressed objects within 4 object streams
