@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.4.10)  29 MAY 2026 11:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.4.10)  29 MAY 2026 13:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -816,63 +816,47 @@ Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count331
- Excluding 'CCSXML' comment.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 220.
-LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 220.
+(Font)              scaled to size 12.0pt on input line 194.
+LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 194.
  (/usr/share/texlive/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
 File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 220.
+(Font)              scaled to size 12.0pt on input line 194.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 220.
+(Font)              scaled to size 12.0pt on input line 194.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 220.
+(Font)              scaled to size 10.95pt on input line 194.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 220.
+(Font)              scaled to size 10.95pt on input line 194.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 220.
+(Font)              scaled to size 9.0pt on input line 194.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 220.
-LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 220.
- (/usr/share/texlive/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
-File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
-)
-LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 220.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 220.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 220.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.2pt on input line 220.
- (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) (./sections/introduction.tex
+(Font)              scaled to size 8.0pt on input line 194.
+ (./sections/introduction.tex
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 1.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 3.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 9.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 15.
- [1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}]) (./sections/imagescan.tex [2.2]
+(Font)              scaled to size 6.0pt on input line 16.
+ [1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}]) (./sections/imagescan.tex [2.2]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 7.3pt on input line 17.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
@@ -884,7 +868,7 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 (Font)              scaled to size 5.5pt on input line 27.
  [3.3{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc}]
-<images/ismexamples.png, id=115, 1308.89pt x 600.2425pt>
+<images/ismexamples.png, id=117, 1308.89pt x 600.2425pt>
 File: images/ismexamples.png Graphic file (type png)
 <use images/ismexamples.png>
 Package pdftex.def Info: images/ismexamples.png  used on input line 52.
@@ -895,26 +879,23 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 
 Class acmart Warning: A possible image without description on input line 55.
 
-[4.4 <./images/ismexamples.png>]) (./sections/computertomography.tex
-Underfull \vbox (badness 3612) has occurred while \output is active []
-
- [5.5]
-<images/ctground.png, id=146, 346.29375pt x 347.2975pt>
+[4.4 <./images/ismexamples.png>]) (./sections/computertomography.tex [5.5]
+<images/ctground.png, id=149, 346.29375pt x 347.2975pt>
 File: images/ctground.png Graphic file (type png)
 <use images/ctground.png>
 Package pdftex.def Info: images/ctground.png  used on input line 24.
 (pdftex.def)             Requested size: 168.56433pt x 169.0538pt.
-<images/ctfullangle.png, id=147, 346.29375pt x 347.2975pt>
+<images/ctfullangle.png, id=150, 346.29375pt x 347.2975pt>
 File: images/ctfullangle.png Graphic file (type png)
 <use images/ctfullangle.png>
 Package pdftex.def Info: images/ctfullangle.png  used on input line 29.
 (pdftex.def)             Requested size: 168.56433pt x 169.0538pt.
-<images/ctlimitedangle.png, id=148, 346.29375pt x 346.29375pt>
+<images/ctlimitedangle.png, id=151, 346.29375pt x 346.29375pt>
 File: images/ctlimitedangle.png Graphic file (type png)
 <use images/ctlimitedangle.png>
 Package pdftex.def Info: images/ctlimitedangle.png  used on input line 36.
 (pdftex.def)             Requested size: 168.56433pt x 168.5652pt.
-<images/ctsparseangle.png, id=149, 346.29375pt x 346.29375pt>
+<images/ctsparseangle.png, id=152, 346.29375pt x 346.29375pt>
 File: images/ctsparseangle.png Graphic file (type png)
 <use images/ctsparseangle.png>
 Package pdftex.def Info: images/ctsparseangle.png  used on input line 41.
@@ -948,8 +929,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 5.0pt on input line 19.
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
 (Font)              scaled to size 7.0pt on input line 19.
- [6.6{/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}]
-<images/sinograms.png, id=177, 874.467pt x 242.8272pt>
+<images/sinograms.png, id=156, 874.467pt x 242.8272pt>
 File: images/sinograms.png Graphic file (type png)
 <use images/sinograms.png>
 Package pdftex.def Info: images/sinograms.png  used on input line 40.
@@ -961,7 +941,11 @@ Class acmart Warning: A possible image without description on input line 43.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7.7 <./images/ctground.png> <./images/ctfullangle.png> <./images/ctlimitedangle.png> <./images/ctsparseangle.png>]
+[6.6{/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}]
+
+LaTeX Warning: Text page 7 contains only floats.
+
+[7.7 <./images/ctground.png> <./images/ctfullangle.png> <./images/ctlimitedangle.png> <./images/ctsparseangle.png> <./images/sinograms.png>]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 59.
 <images/gradescent.png, id=199, 552.8655pt x 297.0297pt>
@@ -976,8 +960,8 @@ Class acmart Warning: A possible image without description on input line 104.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8.8 <./images/sinograms.png>]
-<images/stepsizecompar.png, id=231, 1244.9712pt x 461.3235pt>
+[8.8]
+<images/stepsizecompar.png, id=235, 1244.9712pt x 461.3235pt>
 File: images/stepsizecompar.png Graphic file (type png)
 <use images/stepsizecompar.png>
 Package pdftex.def Info: images/stepsizecompar.png  used on input line 130.
@@ -989,26 +973,74 @@ Class acmart Warning: A possible image without description on input line 133.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9.9 <./images/gradescent.png>]
-Underfull \vbox (badness 4181) has occurred while \output is active []
+<images/samplesdataset.png, id=237, 476.2593pt x 278.2395pt>
+File: images/samplesdataset.png Graphic file (type png)
+<use images/samplesdataset.png>
+Package pdftex.def Info: images/samplesdataset.png  used on input line 150.
+(pdftex.def)             Requested size: 344.005pt x 200.97336pt.
 
- [10.10 <./images/stepsizecompar.png>]
-<images/pnp_trained.png, id=262, 388.0899pt x 152.4897pt>
-File: images/pnp_trained.png Graphic file (type png)
-<use images/pnp_trained.png>
-Package pdftex.def Info: images/pnp_trained.png  used on input line 182.
+Class acmart Warning: A possible image without description on input line 153.
+
+[9.9 <./images/gradescent.png>]
+<images/baselinel1.png, id=247, 388.0899pt x 152.4897pt>
+File: images/baselinel1.png Graphic file (type png)
+<use images/baselinel1.png>
+Package pdftex.def Info: images/baselinel1.png  used on input line 159.
+(pdftex.def)             Requested size: 344.005pt x 135.17557pt.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 160.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.2pt on input line 160.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
+(Font)              scaled to size 8.0pt on input line 160.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
+(Font)              scaled to size 6.2pt on input line 160.
+
+
+Class acmart Warning: A possible image without description on input line 162.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 3019) has occurred while \output is active []
+
+ [10.10 <./images/stepsizecompar.png> <./images/samplesdataset.png>]
+<images/dncnndenoiser.png, id=258, 388.0899pt x 152.4897pt>
+File: images/dncnndenoiser.png Graphic file (type png)
+<use images/dncnndenoiser.png>
+Package pdftex.def Info: images/dncnndenoiser.png  used on input line 201.
 (pdftex.def)             Requested size: 344.005pt x 135.17557pt.
 
 
-Class acmart Warning: A possible image without description on input line 185.
+Class acmart Warning: A possible image without description on input line 204.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11.11 <./images/baselinel1.png>]
+<images/pnp_trained.png, id=283, 388.0899pt x 152.4897pt>
+File: images/pnp_trained.png Graphic file (type png)
+<use images/pnp_trained.png>
+Package pdftex.def Info: images/pnp_trained.png  used on input line 242.
+(pdftex.def)             Requested size: 344.005pt x 135.17557pt.
+
+
+Class acmart Warning: A possible image without description on input line 245.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 197.
-) (./cil_report.bbl
+(Font)              scaled to size 9.0pt on input line 257.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./sections/conclusion.tex [12.12 <./images/dncnndenoiser.png>]) (./cil_report.bbl
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 7.0pt on input line 43.
+ [13.13{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc} <./images/pnp_trained.png>]
 LaTeX Info: Redefining \tempurl on input line 82.
- [11.11 <./images/pnp_trained.png>]
 LaTeX Info: Redefining \tempurl on input line 95.
 LaTeX Info: Redefining \tempurl on input line 106.
 LaTeX Info: Redefining \tempurl on input line 118.
@@ -1028,29 +1060,32 @@ Class acmart Warning: ACM reference format is mandatory
 (acmart)              \settopmatter command..
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below surrounding objects on input line 264.
+Class acmart Warning: \vspace should only be used to provide space above/below surrounding objects on input line 240.
+
+
+Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
 (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [12.12] (./cil_report.aux)
+) [14.14] (./cil_report.aux)
 Package rerunfilecheck Info: File `cil_report.out' has not changed.
-(rerunfilecheck)             Checksum: 68EBE10E91C483D98CD7DDBBD1250056;3547.
+(rerunfilecheck)             Checksum: 124932FB15D682B992148105CD8F6F97;3654.
  ) 
 Here is how much of TeX's memory you used:
- 26687 strings out of 476034
- 449509 string characters out of 5792864
- 1887388 words of memory out of 6000000
- 45891 multiletter control sequences out of 15000+600000
- 711922 words of font info for 438 fonts, out of 8000000 for 9000
+ 26697 strings out of 476034
+ 448941 string characters out of 5792864
+ 1893388 words of memory out of 6000000
+ 45904 multiletter control sequences out of 15000+600000
+ 708774 words of font info for 421 fonts, out of 8000000 for 9000
  1298 hyphenation exceptions out of 8191
- 85i,13n,131p,1306b,2286s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,13n,131p,1294b,1433s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathBMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathBMI5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathRM.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTZ.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on cil_report.pdf (12 pages, 1639700 bytes).
+Output written on cil_report.pdf (14 pages, 1668545 bytes).
 PDF statistics:
- 413 PDF objects out of 1000 (max. 8388607)
- 333 compressed objects within 4 object streams
- 118 named destinations out of 1000 (max. 500000)
- 104126 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 457 PDF objects out of 1000 (max. 8388607)
+ 370 compressed objects within 4 object streams
+ 141 named destinations out of 1000 (max. 500000)
+ 102101 words of extra memory for PDF output out of 106986 (max. 10000000)
 
