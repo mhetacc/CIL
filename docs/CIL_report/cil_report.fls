@@ -1415,10 +1415,6 @@ INPUT ./images/samplesdataset.png
 INPUT images/samplesdataset.png
 INPUT ./images/samplesdataset.png
 INPUT ./images/samplesdataset.png
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newtx/nxlmia.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/LibertineMathRM.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/txmiaSTbb.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/txmiaX.tfm
 INPUT ./images/baselinel1.png
 INPUT ./images/baselinel1.png
 INPUT images/baselinel1.png
@@ -1446,6 +1442,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newtx/nxlmia.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/LibertineMathRM.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/txmiaSTbb.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/txmiaX.tfm
 INPUT ./images/dncnndenoiser.png
 INPUT ./images/dncnndenoiser.png
 INPUT images/dncnndenoiser.png

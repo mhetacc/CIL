@@ -113,7 +113,7 @@ Penalizing large norms yields the \textit{Tikhonov} problem:
 but $u_\alpha^*$ can be found solving a linear system with symmetric, positive definite, matrix.
 The first-order optimality condition gives $(\mathbf{A}^\top\mathbf{A} + \alpha I)u_\alpha^* = \mathbf{A}^\top y$, which is solved iteratively by replacing \textit{ZeroPrior} with \textit{dinv.optim.Tikhonov()} and setting \textit{"lambda": 0.1} in \textit{params\_algo}. The rest is similar to listing \ref{code:gd}.
 
-\subsubsection{LASSO / Sparsity-Promoting Regularisation}
+\subsubsection{LASSO: Sparsity-Promoting Regularisation}
 
 The lasso penalizes solutions with large $1$-norms, promoting solutions with few non-zero entries:
 \begin{equation}
@@ -133,7 +133,6 @@ The above algorithms need to be tuned with hyperparameters, for example \textit{
 \end{figure}
 
 \subsection{Learned Regularisation Functionals}
-TODO
 
 Up until this point we have seen how to solve the inverse problem using model-based reconstruction, by explicitly defining a regularization function that minimizes a cost function. While rigorous, hand-crafted priors are too static to capture complex and nuanced textures.  
 
